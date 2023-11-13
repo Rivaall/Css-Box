@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box 2</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .row1 {
+            background-color: rgb(181, 103, 255);
+            height: 100px;
+        }
+
+        .row2 {
+            display: flex;
+            gap: 10px;
+        }
+
+        .row2-yellow {
+            background-color: yellow;
+            height: 100px;
+            flex-grow: 1;
+        }
+
+        .row2-orange {
+            background-color: orange;
+            height: 100px;
+            flex-grow: 3;
+        }
+
+        .row3 {
+            display: flex;
+            gap: 10px;
+        }
+
+        .row3-red {
+            background-color: red;
+            height: 100px;
+            flex-grow: 1;
+        }
+
+        .row3-blue {
+            background-color: blue;
+            height: 100px;
+            flex-grow: 3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row1">Baris 1</div>
+        <div class="row2">
+            <div class="row2-yellow">Kotak Kuning</div>
+            <div class="row2-orange">Kotak Orange</div>
+        </div>
+        <div class="row3">
+            <div class="row3-red">Kotak Merah</div>
+            <div class="row3-blue">Kotak Biru</div>
+        </div>
+    </div>
+</body>
+</html>
